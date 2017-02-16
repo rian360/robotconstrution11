@@ -175,6 +175,32 @@ Get this from the settings area when logged into <a href="http://particle.io/bui
 
 <br><br>
 
+//Semi-Automatic-Mode
+// make your photon flash SOS even if no internet
+
+SYSTEM_MODE(SEMI_AUTOMATIC);
+
+void setup() {
+  pinMode(D7, OUTPUT);
+  pinMode(D6, INPUT_PULLDOWN); // switch to D6
+  }
+
+void loop() {
+     if (digitalRead(D6) == 0){  // if D6 no electricity then connect to internet
+        if (Particle.connected() == false) {
+             Particle.connect();
+         }
+     }
+
+
+    digitalWrite(D7, 1);            // sets LED on       
+    delay(200);                    // waits 200mS         
+    digitalWrite(D7,0);           // sets LED off         
+
+
+    delay(5000);
+}
+
 
 
 <input type="button" value="d6-send-0" onClick="{
