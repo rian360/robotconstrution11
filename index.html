@@ -231,9 +231,32 @@ Get this from the settings area when logged into <a href="http://spark.io">http:
 
 
 
+<input type="button" value="d4-send-0" onClick="{
+    sendToSpark('d0-send-0')
+}">
+   
+      <input type="button" value="d4-send-1" onClick="{
+    sendToSpark('d4-send-1')
+}">
+
+      <input type="button" value="d4-send-1 delay to 0 in 1 sec" onClick="{
+    sendToSpark('d4-send-1')
+    delay(1000); //wait for 1000 
+                                                            sendToSpark('d4-send-0')
+}">
+     <input type="button" value="d6-send-1 delay to 0 in 1 sec" onClick="{
+    sendToSpark('d6-send-1')
+    delay(1000); //wait for 1000 
+                                                            sendToSpark('d4-send-0')
+}">
+   
+   
+   
+
 <input type="button" value="d0-send-0" onClick="{
     sendToSpark('d0-send-0')
 }">
+
 
 
 
