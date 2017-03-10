@@ -225,15 +225,13 @@ Get this from the settings area when logged into <a href="http://spark.io">http:
 <input type="button" value="a4-serv-90" onClick="{
     sendToSpark('a4-serv-90')
 }">
-   <input type="button" value="d0-send-1" onClick="{
-    sendToSpark('d0-send-1')
-}">
+<br>
 
 
 
 <input type="button" value="d4-send-0" onClick="{
     sendToSpark('d0-send-0')
-}">
+}"><br>
    
       <input type="button" value="d4-send-1" onClick="{
     sendToSpark('d4-send-1')
@@ -241,26 +239,40 @@ Get this from the settings area when logged into <a href="http://spark.io">http:
 
       <input type="button" value="d4-send-1 delay to 0 in 1 sec" onClick="{
     sendToSpark('d4-send-1')
-    delay(100); //wait for 100 
-                                                            sendToSpark('d4-send-0')
+    delay(100);
+    sendToSpark('d4-send-0')
+    delay(100);
+    sendToSpark('d4-send-1')
+    delay(100);
+    sendToSpark('d4-send-0')
 }">
      <input type="button" value="d6-send-1 delay to 0 in 1 sec" onClick="{
     sendToSpark('d6-send-1')
-    delay(100); //wait for 100
-                                                            sendToSpark('d6-send-0')
+    delay(100);
+    sendToSpark('d6-send-0')
+    delay(100); 
+    sendToSpark('d6-send-1')
+    delay(100);
+    sendToSpark('d6-send-0')
 }">
    <input type="button" value="d0-send-1 delay to 0 in 1 sec" onClick="{
     sendToSpark('d0-send-1')
-    delay(100); //wait for 100
-                                                            sendToSpark('d0-send-0')
-}">
-   
-   
-   
-
-<input type="button" value="d0-send-0" onClick="{
+    delay(100); 
+    sendToSpark('d0-send-0')
+    delay(100); 
+    sendToSpark('d0-send-1')
+    delay(100); 
     sendToSpark('d0-send-0')
 }">
+   
+   
+   <br>
+<input type="button" value="d0-send-1" onClick="{
+    sendToSpark('d0-send-1')
+}">
+<input type="button" value="d0-send-0" onClick="{
+    sendToSpark('d0-send-0')
+}"><br>
 
 
 
@@ -276,7 +288,7 @@ Get this from the settings area when logged into <a href="http://spark.io">http:
    
    <input type="button" value="a5-read" onClick="{
     sendToSpark('a1-read')
-}"><br>
+}"><br><br>
 
 
 <input type="button" value="a4-send-0" onClick="{
