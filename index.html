@@ -242,34 +242,6 @@ Get this from the settings area when logged into <a href="http://spark.io">http:
     sendToSpark('d4-send-1')
 }">
 
-      <input type="button" value="d4-send-1 delay to 0 in 1 sec" onClick="{
-    sendToSpark('d4-send-1')
-    delay(100);
-    sendToSpark('d4-send-0')
-    delay(100);
-    sendToSpark('d4-send-1')
-    delay(100);
-    sendToSpark('d4-send-0')
-}">
-     <input type="button" value="d6-send-1 delay to 0 in 1 sec" onClick="{
-    sendToSpark('d6-send-1')
-    delay(100);
-    sendToSpark('d6-send-0')
-    delay(100); 
-    sendToSpark('d6-send-1')
-    delay(100);
-    sendToSpark('d6-send-0')
-}">
-   <input type="button" value="d0-send-1 delay to 0 than 1 back to 0 in  5 sec" onClick="{
-    sendToSpark('d0-send-1')
-    delay(5000); 
-    sendToSpark('d0-send-0')
-    delay(100); 
-    sendToSpark('d0-send-1')
-    delay(100); 
-    sendToSpark('d0-send-0')
-}">
-   
    
    <br>
 <input type="button" value="d0-send-1" onClick="{
@@ -299,19 +271,32 @@ Get this from the settings area when logged into <a href="http://spark.io">http:
 <input type="button" value="a4-send-0" onClick="{
     sendToSpark('a4-send-0')
 }">
-
+<input type="button" value="a4-send-90" onClick="{
+    sendToSpark('a4-send-90')
+}">
+    
+   <input type="button" value="a4-send-150" onClick="{
+    sendToSpark('a4-send-150')
+}">
 
 <input type="button" value="a4-send-255" onClick="{
     sendToSpark('a4-send-255')
 }">
   <br> 
    <input type="button" value="a5-send-0" onClick="{
-    sendToSpark('a4-send-0')
+    sendToSpark('a5-send-0')
 }">
-
+<input type="button" value="a5-send-90" onClick="{
+    sendToSpark('a5-send-90')
+}">
+    
+   <input type="button" value="a5-send-150" onClick="{
+    sendToSpark('a5-send-150')
+}">
+    
 
 <input type="button" value="a5-send-255" onClick="{
-    sendToSpark('a4-send-255')
+    sendToSpark('a5-send-255')
 }">
     
 Note: PWM only on A4, A5 presently<br>
